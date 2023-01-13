@@ -1,6 +1,6 @@
 Privacy Policy
 ---------------
-Last Update      : January 12,2023
+Last Update      : January 13,2023
 Application Name : SoundTester
 Publisher        : Erol Kucuk
 Contact          : erolkucuk@gmail.com
