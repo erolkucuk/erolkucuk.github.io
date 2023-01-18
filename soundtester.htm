@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<style>
+img{background-color:gray;}
+li{padding:.5em;}
+</style>
+<body style="">
+<h2>Settings</h2>
+<p><b>Microphone:</b> Microphone to be used to record audio. It can be built-in microphone,wired or bluetooth headset microphone.</p>
+<p><b>Duration:</b> Audio record buffer size in seconds.Default is 1s.Maximum duration size is limited to 10s.</p>
+<p><b>Sample rate:</b> Input audio data's sampling rate. Default is 44100. Maximum rate is limited to 192000.</p>
+<p><b>Fft number:</b> Fft algorithm uses 2^(fft number) number samples to calculate fourier transform.Default is 13 (2^13=8192).Maximum fft number is limited to 15.</p>
+<br>
+<h2>Toolbar/Menu Commands</h2>
+    <p>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMicgaGVpZ2h0PSczMicgdmlld0JveD0nMCAwIDI0IDI0Jz48cGF0aCBmaWxsPScjZmZmZmZmJyBkPSdNMTIsMTRjMS42NiwwIDIuOTksLTEuMzQgMi45OSwtM0wxNSw1YzAsLTEuNjYgLTEuMzQsLTMgLTMsLTNTOSwzLjM0IDksNXY2YzAsMS42NiAxLjM0LDMgMywzek0xNy4zLDExYzAsMyAtMi41NCw1LjEgLTUuMyw1LjFTNi43LDE0IDYuNywxMUw1LDExYzAsMy40MSAyLjcyLDYuMjMgNiw2LjcyTDExLDIxaDJ2LTMuMjhjMy4yOCwtMC40OCA2LC0zLjMgNiwtNi43MmgtMS43eicvPjwvc3ZnPgo="/>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMicgaGVpZ2h0PSczMicgdmlld0JveD0nMCAwIDI0IDI0Jz48cGF0aCBmaWxsPScjZmZmZmZmJyBkPSdNMTIsMkM2LjQ4LDIgMiw2LjQ4IDIsMTJjMCw1LjUyIDQuNDgsMTAgMTAsMTBzMTAsLTQuNDggMTAsLTEwQzIyLDYuNDggMTcuNTIsMiAxMiwyek0xNiwxNkg4VjhoOFYxNnonLz48L3N2Zz4K"/>
+        <b>Start/Stop:</b> Starts and stops recording.
+    </p>
+    <p>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMicgaGVpZ2h0PSczMicgdmlld0JveD0nMCAwIDI0IDI0Jz48cGF0aCBmaWxsPScjZmZmZmZmJyBkPSdNMTIsMkM2LjQ4LDIgMiw2LjQ4IDIsMTJzNC40OCwxMCAxMCwxMCAxMCwtNC40OCAxMCwtMTBTMTcuNTIsMiAxMiwyek0xMywxN2gtMnYtNmgydjZ6TTEzLDloLTJMMTEsN2gydjJ6Jy8+PC9zdmc+Cg=="/>
+        <b>Info:</b> Opens and closes info panel.
+    </p>
+    <p>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMicgaGVpZ2h0PSczMicgdmlld0JveD0nMCAwIDI0IDI0Jz48cGF0aCBmaWxsPScjZmZmZmZmJyBkPSdNMTkuMTQsMTIuOTRjMC4wNCwtMC4zIDAuMDYsLTAuNjEgMC4wNiwtMC45NGMwLC0wLjMyIC0wLjAyLC0wLjY0IC0wLjA3LC0wLjk0bDIuMDMsLTEuNThjMC4xOCwtMC4xNCAwLjIzLC0wLjQxIDAuMTIsLTAuNjFsLTEuOTIsLTMuMzJjLTAuMTIsLTAuMjIgLTAuMzcsLTAuMjkgLTAuNTksLTAuMjJsLTIuMzksMC45NmMtMC41LC0wLjM4IC0xLjAzLC0wLjcgLTEuNjIsLTAuOTRMMTQuNCwyLjgxYy0wLjA0LC0wLjI0IC0wLjI0LC0wLjQxIC0wLjQ4LC0wLjQxaC0zLjg0Yy0wLjI0LDAgLTAuNDMsMC4xNyAtMC40NywwLjQxTDkuMjUsNS4zNUM4LjY2LDUuNTkgOC4xMiw1LjkyIDcuNjMsNi4yOUw1LjI0LDUuMzNjLTAuMjIsLTAuMDggLTAuNDcsMCAtMC41OSwwLjIyTDIuNzQsOC44N0MyLjYyLDkuMDggMi42Niw5LjM0IDIuODYsOS40OGwyLjAzLDEuNThDNC44NCwxMS4zNiA0LjgsMTEuNjkgNC44LDEyczAuMDIsMC42NCAwLjA3LDAuOTRsLTIuMDMsMS41OGMtMC4xOCwwLjE0IC0wLjIzLDAuNDEgLTAuMTIsMC42MWwxLjkyLDMuMzJjMC4xMiwwLjIyIDAuMzcsMC4yOSAwLjU5LDAuMjJsMi4zOSwtMC45NmMwLjUsMC4zOCAxLjAzLDAuNyAxLjYyLDAuOTRsMC4zNiwyLjU0YzAuMDUsMC4yNCAwLjI0LDAuNDEgMC40OCwwLjQxaDMuODRjMC4yNCwwIDAuNDQsLTAuMTcgMC40NywtMC40MWwwLjM2LC0yLjU0YzAuNTksLTAuMjQgMS4xMywtMC41NiAxLjYyLC0wLjk0bDIuMzksMC45NmMwLjIyLDAuMDggMC40NywwIDAuNTksLTAuMjJsMS45MiwtMy4zMmMwLjEyLC0wLjIyIDAuMDcsLTAuNDcgLTAuMTIsLTAuNjFMMTkuMTQsMTIuOTR6TTEyLDE1LjZjLTEuOTgsMCAtMy42LC0xLjYyIC0zLjYsLTMuNnMxLjYyLC0zLjYgMy42LC0zLjZzMy42LDEuNjIgMy42LDMuNlMxMy45OCwxNS42IDEyLDE1LjZ6Jy8+PC9zdmc+Cg=="/>
+        <b>Settings:</b> Opens settings page.
+    </p>
+    <p>
+        <b>Normalize:</b> Normalizes audio waveform.It works if recording is already stopped.
+    </p>
+    <p>
+        <b>Reset Zoom:</b> Resets zoom ratios to 1.0.
+    </p>
+    <p>
+        <b>Privacy Policy:</b> Shows application privacy policy document.
+    </p>
+    <p>
+        <b>Help:</b> Shows offline application manual.
+    </p>
+
+<h2>Descriptions</h2>
+<p>
+    -This application gets audio data from microphone and calculates its fourier transform as a frequency spectrum. <br>
+    Fourier transform converts a time domain signal to frequency-domain signal. In other words fourier transform finds which frequency components the input signal consists of.
+    Fft(Fast fourier transform) is an algorithm to calculate a time domain signal's fourier transform with computational efficiency.<br>
+    Sampling rate of input data determines resulting frequency spectrum range so <br>
+    if sample rate = 44100 then frequency spectrum is between 0 and 22050Hz(sample rate/2).</p>
+<p>
+    -To start/stop recording audio press "MIC" button on the toolbar. Application will record audio only last as many seconds as "Duration".
+</p>
+<p>
+    -There is two graphs in the app, first(audio graph) shows input waveform and second(fft graph) shows fourier transform result as frequency spectrum.
+</p>
+<p>
+    -Yellow bar on the audio graph shows which data section to be used as input for fft analysis. This bar shows up only at zoom level 1.
+    User can slide this bar left and right to choose data section.
+</p>
+<p>
+    -Graphics can be dragged and zoomed in/out by pinching on data or sliding fingers on axes.
+    When zooming ,involved axis labels colors will change to yellow and +/- signs will appear.
+    Zoom level ratio also will be printed on the graph while zooming.
+</p>
+<p>
+    -Fft frequency spectrum resolution is (sample rate)/2^(fft number). Increasing fft number will increase accuracy of spectrum but will cause more cpu usage.
+</p>
+<p>
+    -Info panel shows actual applied settings for audio sampling and fft analysis. Also lists frequency spectrum's most dominant lines. This list is limited to 16 items.
+    To open/close info panel click (i) button on the toolbar. Alternatively user can close info panel by swiping left on it or tapping info panel title.
+    Fft data graphic also prints most dominant frequency in the audio signal.
+</p>
+</body>
+</html>
